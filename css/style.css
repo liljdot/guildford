@@ -522,6 +522,12 @@ h1.classes_text {
     bottom: -2em;
 }
 
+.shalford .carousel-control {
+    position: relative;
+    left: -15em;
+    bottom: -2em;
+}
+
 /* footer updates */
 
 .footer_section a {
