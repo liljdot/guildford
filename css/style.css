@@ -432,6 +432,11 @@ button {
     color: black;
 }
 
+.navbar-nav .nav-item.walks .dropdown a.active {
+    background-color: white;
+    color: black;
+}
+
 @media (max-width: 991px) {
     .navbar-nav .nav-item.walks-responsive {
         display: block;
@@ -478,6 +483,10 @@ body div .copyright_text{
     display: none;
 }
 
+.walk-box {
+    cursor: pointer;
+}
+
 @media (max-width: 599px) {
     .dance_main {
         display: none;
@@ -497,6 +506,20 @@ h1.classes_text {
 
 .padding_right_0 {
     padding-right: 0px !important;
+}
+
+/* walks page carousels */
+
+.boxgrove .carousel-control {
+    position: relative;
+    left: -15em;
+    bottom: -2em;
+}
+
+.worplesdon .carousel-control {
+    position: relative;
+    left: -15em;
+    bottom: -2em;
 }
 
 /* footer updates */
