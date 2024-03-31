@@ -540,6 +540,12 @@ h1.classes_text {
     bottom: -2em;
 }
 
+/* volunteers page form */
+
+#login label {
+    color: red;
+}
+
 /* footer updates */
 
 .footer_section a {
