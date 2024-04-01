@@ -540,6 +540,13 @@ h1.classes_text {
     bottom: -2em;
 }
 
+
+.about .carousel-control {
+    position: relative;
+    left: -15em;
+    bottom: -2em;
+}
+
 /* volunteers page form */
 
 #login label {
