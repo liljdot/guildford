@@ -262,7 +262,7 @@ button {
     background-color: #118f8b;
 }
 .navbar {
-    padding: 0px 25px 30px 25px;
+    padding: 0px 25px 0px 25px;
 }
 .search_icon{
     padding-top: 30px;
@@ -438,6 +438,10 @@ button {
 }
 
 @media (max-width: 991px) {
+    .navbar-nav {
+        margin-top: 1em;
+    }
+
     .navbar-nav .nav-item.walks-responsive {
         display: block;
     }
