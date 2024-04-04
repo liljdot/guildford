@@ -238,7 +238,7 @@ width: 30%;
 .border_0 { width: 100%; margin: 10px 0px; }
 .hiphop_text_1 { width: 100%; font-size: 16px; }
 .adderss_text { padding-top: 30PX; }
-.footer_section { padding-top: 50px; }
+.footer_section { padding-top: 0px; }
 .map_icon { font-size: 15px; }
 .navbar { padding: 20px 20px; }
 .banner_section::after {
@@ -318,7 +318,7 @@ padding: 126px 40px;
 .border_0 { width: 100%; margin: 10px 0px; }
 .hiphop_text_1 { width: 100%; font-size: 16px; }
 .adderss_text { padding-top: 30PX; }
-.footer_section { padding-top: 50px; }
+.footer_section { padding-top: 0px; }
 .map_icon { font-size: 15px; }
 .navbar { padding: 20px 20px; }
 .banner_section::after {
@@ -435,7 +435,7 @@ ul.link li {
 .border_0 { width: 100%; margin: 10px 0px; }
 .hiphop_text_1 { width: 100%; font-size: 19px; }
 .adderss_text { padding-top: 30PX; }
-.footer_section { padding-top: 50px; }
+.footer_section { padding-top: 0px; }
 .navbar { padding: 20px 20px; }
 
 }

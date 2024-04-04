@@ -931,7 +931,7 @@ textarea#comment::placeholder {
     float: left;
     background-color: #1b1b1b;
     height: auto;
-    padding-bottom: 50px;
+    padding: 0px;
 }
 .adderss_text{
     width: 100%;
