@@ -424,7 +424,7 @@ button {
     top: 70px; 
     left: 50%; 
     transform: translateX(-50%);
-    z-index: 20;
+    z-index: 21;
 }
 
 .navbar-nav .nav-item.walks .dropdown a:hover {
