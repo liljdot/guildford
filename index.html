@@ -34,6 +34,21 @@
 </head>
 
 <body>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="singh_text">Please click send on your E-mail client.</p>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- header section start -->
   <div class="header_section">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -209,9 +224,9 @@
   <!-- Students section start -->
   <div class="Students_section layout_padding">
     <div class="container-fluid px-md-5">
-      <h1 class="welcome_text">Free Guided Short Walks!</h1>
+      <h1 class="welcome_text">Free Guided Short Walks</h1>
       <br><br><br>
-      <h2 class="welcome_text"><strong>Every weekday. All abilities welcome!</strong> </h2>
+      <h2 class="welcome_text"><strong>Every weekday. All abilities welcome</strong> </h2>
       <br>
       <div class="shade_box">
         <p class="singh_text">
@@ -221,7 +236,7 @@
           local
           area and meet new people.
           We have a morning health walk for every weekday.
-          All our walks are led by trained volunteer walk leaders
+          All our walks are led by trained volunteer walk leaders.
           <br><br>
           Regular walking has many benefits:
         <ul>
@@ -311,8 +326,6 @@
         <p class="amet_text_1">Over the years that first walk group has increased to five, with walks on offer around Guildford and the villages, including Worplesdon, Shalford, and Shere.</p>
         <p class="amet_text_1">In 2015 we became a Community Group Association run by a committee. We are currently 35 trained volunteer walk leaders taking turns to lead around 20 to 25 FREE walks a month.</p> -->
 
-      <p class="amet_text_1">
-      </p>
       <div class="click_bt"><a href="contact.html">Click To Sigup</a></div>
     </div>
   </div>
@@ -324,19 +337,17 @@
   <div class="contact_section layout_padding">
     <div class="container-fluid">
       <div class="contact_section2">
-        <div class="row">
+        <div class="row shade_box px-3 py-5 px-md-5" style="flex-direction: row;">
+          <h1 class="welcome_text my-5"><strong>Contact Us</strong></h1>
           <div class="col-md-6 padding_left_0">
             <div class="mail_section">
-              <!-- <form action="https://formspree.io/f/xjvnayyw" method="POST">
-                <input type="" class="mail_text" placeholder="Name" name="Name">
-                <input type="" class="mail_text" placeholder="Phone Number" name="Phone Number">
-                <input type="" class="mail_text" placeholder="Email" name="Email">
-                <textarea class="massage_text" placeholder="Message" rows="5" id="comment" name="Message"></textarea>
-                <button type="submit" class="send_bt">Send</button>
-              </form> -->
-              <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLSd1nR0jlF1RjqxN308fcyu5r2aa8gOUKXNpfWNrM33B6OosNw/viewform?embedded=true"
-                width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+              <form action="" method="POST">
+                <input id="name" type="" class="mail_text" placeholder="Name" name="Name">
+                <input id="number" type="" class="mail_text" placeholder="Phone Number" name="Phone Number">
+                <input id="email" type="" class="mail_text" placeholder="Email" name="Email">
+                <textarea class="massage_text" placeholder="Message" rows="5" id="message" name="Message"></textarea>
+                <button id="sendMessage" type="submit" class="send_bt">Send</button>
+              </form>
             </div>
           </div>
           <div class="col-md-6 padding_0">
@@ -356,20 +367,20 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-md-3">
-          <div class="map_icon d-flex justify-content-center">
+          <div class="map_icon d-flex justify-content-start justify-content-sm-center">
             <img src="images/map-icon.png">
             <span class="paddlin_left_0">Guildford, United Kingdom</span>
           </div>
         </div>
         <div class="col-12 col-md-6">
-          <div class="map_icon d-flex justify-content-center">
+          <div class="map_icon d-flex justify-content-start justify-content-sm-center">
             <img src="images/mail-icon.png">
             <span class="paddlin_left_0">General enquiries:<a href="mailto:enquiries@guildfordhealthwalks.org.uk">
                 enquiries@guildfordhealthwalks.org.uk</a></span>
           </div>
         </div>
         <div class="col-12 col-md-3">
-          <div class="map_icon d-flex justify-content-center">
+          <div class="map_icon d-flex justify-content-start justify-content-sm-center">
             <span>Follow Us</span>
             <img src="images/fb-icon.png" alt="" class="paddlin_left_0">
           </div>
@@ -393,6 +404,16 @@
         box.firstChild.click()
       })
     }
+
+    const sendMessage = (e) => {
+      e.preventDefault()
+      if (document.getElementById('name').value && document.getElementById('email').value && document.getElementById('number').value && document.getElementById('message').value) {
+        window.open(`mailto: enquiries@guildfordhealthwalks.co.uk?subject=${''}&body=${document.getElementById('message').value + "%0D%0A%0D%0A"}sent by ${document.getElementById('name').value + "%0D%0A"}Phone: ${document.getElementById('number').value}&cc=${document.getElementById('email').value ? document.getElementById('email').value : null}`, "_self")
+        $("#exampleModal").modal('show')
+      }
+    }
+
+    document.getElementById('sendMessage').addEventListener('click', (sendMessage))
   </script>
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>

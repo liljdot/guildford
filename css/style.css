@@ -578,30 +578,45 @@ h1.classes_text {
     /* position: relative;
     left: -15em;
     bottom: -2em; */
+    @media (max-width: 991px) {
+        bottom: 7%
+    }
 }
 
 .worplesdon .carousel-control {
     /* position: relative;
     left: -15em;
     bottom: -2em; */
+    @media (max-width: 991px) {
+        bottom: 7%
+    }
 }
 
 .shalford .carousel-control {
     /* position: relative;
     left: -15em;
     bottom: -2em; */
+    @media (max-width: 991px) {
+        bottom: 7%
+    }
 }
 
 .shere .carousel-control {
     /* position: relative;
     left: -15em;
     bottom: -2em; */
+    @media (max-width: 991px) {
+        bottom: 7%
+    }
 }
 
 .whitmoor .carousel-control {
     /* position: relative;
     left: -15em;
     bottom: -2em; */
+    @media (max-width: 991px) {
+        bottom: 7%
+    }
 }
 
 
@@ -609,6 +624,9 @@ h1.classes_text {
     /* position: relative;
     left: -15em;
     bottom: -2em; */
+    @media (max-width: 991px) {
+        bottom: 7%
+    }
 }
 
 @media (max-width: 991px) {
@@ -1031,7 +1049,6 @@ h2.welcome_text {
 .contact_section2 {
     width: 100%;
     float: left;
-    padding-top: 80px;
 }
 
 .mail_section {
@@ -1081,7 +1098,7 @@ textarea#comment::placeholder {
     font-size: 20px;
     color: #ffffff;
     text-align: center;
-    background-color: #ff5333;
+    background-color: #118f8b;
     padding: 10px 0px;
     text-transform: uppercase;
     border-radius: 30px;
