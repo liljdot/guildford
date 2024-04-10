@@ -408,7 +408,7 @@
     const sendMessage = (e) => {
       e.preventDefault()
       if (document.getElementById('name').value && document.getElementById('email').value && document.getElementById('number').value && document.getElementById('message').value) {
-        window.open(`mailto: enquiries@guildfordhealthwalks.co.uk?subject=${''}&body=${document.getElementById('message').value + "%0D%0A%0D%0A"}sent by ${document.getElementById('name').value + "%0D%0A"}Phone: ${document.getElementById('number').value}&cc=${document.getElementById('email').value ? document.getElementById('email').value : null}`, "_self")
+        window.open(`mailto: enquiries@guildfordhealthwalks.org.uk?subject=${''}&body=${document.getElementById('message').value + "%0D%0A%0D%0A"}sent by ${document.getElementById('name').value + "%0D%0A"}Phone: ${document.getElementById('number').value}&cc=${document.getElementById('email').value ? document.getElementById('email').value : null}`, "_self")
         $("#exampleModal").modal('show')
       }
     }
