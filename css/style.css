@@ -1351,3 +1351,32 @@ textarea#comment::placeholder {
 #documents li a {
     text-decoration: underline !important;
 }
+
+.black {
+    color: black !important;
+}
+
+.docs_container {
+    position: relative;
+    .docs {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        overflow-y: scroll;
+        a {
+            text-decoration: underline !important;
+        }
+    }
+
+    .docs::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+#collapseDocs {
+    li a {
+        text-decoration: underline !important;
+    }
+}
