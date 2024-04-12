@@ -1308,6 +1308,33 @@ textarea#comment::placeholder {
     border-radius: 5px;
 }
 
+.collapse_btn {
+    min-width: 100%;
+    background-color: transparent;
+    border: none;
+    color: black;
+    text-align: start;
+    font-weight: bold;
+    border-bottom: 1px solid #118f8b;
+    span {
+        float: right;
+    };
+}
+
+.collapse_btn:focus,
+.collapse_btn:active,
+.collapse_btn:hover {
+    background-color: transparent;
+    border: none;
+    color: black;
+    border-bottom: 1px solid #118f8b;
+}
+
+.collapse_btn.animate_active {
+    span {
+        transform: rotate(180deg);
+    }
+}
 .border_test {
     border: 1px solid black !important;
 }
