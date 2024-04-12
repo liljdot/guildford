@@ -750,6 +750,10 @@ h3.welcome_text {
     text-align: center;
     text-transform: uppercase;
     color: rgb(40, 94, 101);
+    a {
+        text-decoration: underline !important;
+        color: rgb(40, 94, 101);
+    }
 
     @media (max-width: 991px) {
         font-size: 12px;
@@ -1106,6 +1110,10 @@ h3.welcome_text {
     width: 90%;
     float: left;
     padding-left: 50px;
+}
+
+.registration .mail_section {
+    width: auto;
 }
 
 .mail_text {
