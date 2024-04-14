@@ -1376,6 +1376,10 @@ textarea#comment::placeholder {
         a {
             text-decoration: underline !important;
         }
+
+        @media (max-width: 599px){
+            position: relative;
+        }
     }
 
     .docs::-webkit-scrollbar {
