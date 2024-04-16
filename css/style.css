@@ -56,7 +56,7 @@ body {
     line-height: 1.80857;
     font-family: "Arial Rounded MT";
     font-weight: bold;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 a {
@@ -306,8 +306,8 @@ button {
     left: 0;
     bottom: -55px;
     width: 100%;
-    height: 120px;
-    transform: rotate(-5deg) scale(1.2);
+    height: 150px;
+    transform: rotate(-5deg);
     z-index: -1;
 }
 
