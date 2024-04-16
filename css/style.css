@@ -43,7 +43,7 @@
 
 * {
     box-sizing: border-box !important;
-    transition: ease all 0.5s;
+    transition: ease all 0.5s;    
 }
 
 html {
@@ -57,6 +57,7 @@ body {
     font-family: "Arial Rounded MT";
     font-weight: bold;
     overflow-x: hidden !important;
+    -moz-overflow: hidden !important;
 }
 
 a {
@@ -689,6 +690,7 @@ h1.classes_text {
     background-color: #1b1b1b;
     height: fit-content;
     padding: 0px;
+    overflow-x: hidden;
 
     a {
         text-decoration: underline !important;
@@ -771,7 +773,7 @@ h3.welcome_text {
     list-style-position: inside;
 }
 
-.volunteer_page {
+.volunteer_page, .committee_page {
     ol li {
         list-style-type: decimal;
         list-style-position: inside;
