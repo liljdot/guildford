@@ -57,7 +57,6 @@ body {
     font-family: "Arial Rounded MT";
     font-weight: bold;
     overflow-x: hidden !important;
-    -moz-overflow: hidden !important;
 }
 
 a {
