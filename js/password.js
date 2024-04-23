@@ -1,6 +1,6 @@
 const password = {
-    volunteers: "guildford",
-    committee: "guildford"
+    volunteers: "guildfo#3",
+    committee: "walkprecise"
 }
 
 export default password;
