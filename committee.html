@@ -251,15 +251,15 @@
   </div>
   <!-- copyright section end -->
   <!-- Javascript files-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script type="module">
-    import passwords from './js/password.js'
-    const password = passwords.committee
+    let password
+
     const documents = [
       { name: "Constitution Document", link: "https://docs.google.com/document/d/" + "1rcKyjykM-46" + "e96_I-NscFNT0" + "ADFZtyuGCHSfsb" + "2egHc/edit?usp=sharing" },
       { name: "Committee Members", link: "https://docs.google.com/document/d/" + "1CZ0ZdeJlDcS" + "IVHKt5TNr8Ja" + "T4QfMGDuVy9vw" + "3LEfxKE/edit?usp=sharing" },
-      { name: "GHW Committee Minutes of the Meeting | 12-Oct-23", link: "files/AGM12Oct23.pdf" },
-      { name: "GHW Committee Minutes of the Meeting | 28-Feb-24", link: "files/AGM28Feb24.pdf" },
-      { name: "Policies and Data Management", link: "" },
+      { name: "GHW Committee Minutes of the Meeting | 12-Oct-23", link: "fil" + "es/A" + "GM12" + "Oc" + "t23.pdf" },
+      { name: "GHW Committee Minutes of the Meeting | 28-Feb-24", link: "fil" + "es/A" + "GM2" + "8Fe" + "b24.pdf" },
       { name: "Managing Information", link: "https://docs.google.com/document/d/" + "1OZHIZT8BxdjY" + "DNNF8ozoztR" + "QJlARSIXtBPep" + "6saVr9o/edit?usp=sharing" },
       { name: "Managing Information Procedure", link: "https://docs.google.com/document/d/" + "1cKcHXa-dy3" + "6FsvkbjfMSm" + "FdLGIozH37ze-2s" + "3-DVl7c/edit?usp=sharing" },
       { name: "Data Breach Procedure", link: "https://docs.google.com/document/d/" + "1jqEu98ULB6Y" + "-Q99WnViA3WHl" + "I4F1_m10yuNzol" + "VvYtk/edit?usp=sharing" },
@@ -267,8 +267,7 @@
       { name: "Personal Data Request Procedure", link: "https://docs.google.com/document/d/" + "1K3g3M54LCNGZ" + "1RiGQPvC71N8Ve" + "Qjj2Vue4N7KhM" + "10gk/edit?usp=sharing" },
       { name: "Data Retention Schedule", link: "https://docs.google.com/document/d/" + "1epP1rfFeI__WO" + "QCqYGDGZOKqwQl" + "BQBwwHSXhlqv" + "gE7g/edit?usp=sharing" }
     ]
-    const checkPassword = (e) => {
-      e.preventDefault()
+    const checkPassword = () => {
       if (document.getElementById('password').value === password) {
         document.getElementById('login').remove()
         document.getElementById('loginContainer').classList.remove('align-items-center')
@@ -297,8 +296,15 @@
         }
       }
     }
-
-    document.getElementById('login').addEventListener('submit', checkPassword)
+    $(document).ready(function() {
+      $("#login").submit(function(e) {
+        e.preventDefault()
+        $.get("passwords.txt", function(data, status) {
+        password = JSON.parse(data).committee
+        checkPassword()
+      })
+      })
+    })
   </script>
   <script src="js/jquery.min.js"></script>
   <script src="js/popper.min.js"></script>
