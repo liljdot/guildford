@@ -233,8 +233,7 @@
           <div class="justify-content-end">
             <div class="map_icon d-flex justify-content-start justify-content-sm-center">
               <span>Follow Us</span>
-              <img src="images/fb-icon.png" alt="" class="paddlin_left_0"><a
-                href="https://www.facebook.com/GuildfordWalkGroups"><img src="images/fb-icon.png" alt=""
+              <a href="https://www.facebook.com/GuildfordWalkGroups"><img src="images/fb-icon.png" alt=""
                   class="paddlin_left_0"></a>
             </div>
           </div>
@@ -251,7 +250,9 @@
   </div>
   <!-- copyright section end -->
   <!-- Javascript files-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script type="module">
     let password
 
@@ -296,13 +297,13 @@
         }
       }
     }
-    $(document).ready(function() {
-      $("#login").submit(function(e) {
+    $(document).ready(function () {
+      $("#login").submit(function (e) {
         e.preventDefault()
-        $.get("passwords.txt", function(data, status) {
-        password = JSON.parse(data).committee
-        checkPassword()
-      })
+        $.get("passwords.txt", function (data, status) {
+          password = JSON.parse(data).committee
+          checkPassword()
+        })
       })
     })
   </script>
