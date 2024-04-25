@@ -40,10 +40,25 @@
 @import url(nice-select.css);
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+.d-sm-table {
+    @media (min-width: 599px) {
+        min-height: 215px;
+        .docs_container {
+            width: 33%;
+        }
+        @media (min-width: 768px) {
+            min-height: 327px;
+            @media (min-width: 991px) {
+                min-height: 367px;
+            }
+        }
+    }
+}
 
 * {
     box-sizing: border-box !important;
-    transition: ease all 0.5s;    
+    transition: ease all 0.5s;   
+    /* border: 1px solid red;  */
 }
 
 html {
@@ -508,6 +523,7 @@ body div .copyright_text {
     color: rgb(56, 139, 143);
     font-family: "Arial Rounded MT";
     font-weight: bold;
+    word-wrap: break-word;
 
     strong {
         font-size: 24px;
@@ -776,11 +792,13 @@ h3.welcome_text {
     ol li {
         list-style-type: decimal;
         list-style-position: inside;
+        word-wrap: break-word;
         strong {
             color: black;
         }
         .email_text {
             text-decoration: underline !important;
+            word-wrap: break-word;
         }
     }
 }
